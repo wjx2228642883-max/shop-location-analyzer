@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # 加载环境变量（如果没配置.env，可以手动把Key填在下面）
 load_dotenv()
-AMAP_KEY = os.getenv("AMAP_KEY", "255fc2536fe7604b966f1602a62b7629") 
+AMAP_KEY = os.getenv("AMAP_KEY") 
 
 # --- 1. 地理编码：把地址转成经纬度 ---
 def geocode(address):
